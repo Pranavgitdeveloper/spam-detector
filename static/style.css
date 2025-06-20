@@ -1,0 +1,32 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.alert {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.card-title {
+    animation: slideInTop 1s ease forwards;
+}
+
+.btn-success:hover {
+    animation: bounce 0.4s;
+}
